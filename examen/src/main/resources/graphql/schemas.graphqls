@@ -1,0 +1,28 @@
+type Query{
+	ListarAutor : [Autor],
+	ListarEditorial: [Editorial],
+	ListarLibro : [Libro]
+}
+
+type Autor{
+	idautor : String,
+	nombres : String,
+	apellidos : String,
+	pais : String
+	
+}
+
+type Editorial{
+	ideditorial : String,
+	nombre : String,
+	pais: String
+}
+
+type Libro{
+	idlibro : String,
+	titulo: String,
+	descripcion: String,
+	paginas: String, 
+	idautor: String,
+	ideditorial: String
+}
